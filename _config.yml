@@ -55,7 +55,7 @@ permalink: /:title/
 collections:
   authors:
     output: true
-paginate_path: "{{site.baseurl}}/page/:num/"
+paginate_path: "{{site.baseurl}}page/:num/"
 
 use_logo: false
 
