@@ -1,6 +1,6 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+name: JiJi Technologies
+title: JiJi Technologies | Blogs
+description: Blogs in JiJi Technologies
 tags:
   - blog
   - template
@@ -19,3 +19,4 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
+paginate: 5
