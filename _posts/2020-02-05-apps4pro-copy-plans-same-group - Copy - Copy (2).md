@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Copy plan or tasks from same Office365 Groups"
-date: 2019-11-05 08:44:38 -0400
+date: 2020-02-05 08:44:38 -0400
 category: apps4pro
 author: ajita
 short-description: No plans processed error
