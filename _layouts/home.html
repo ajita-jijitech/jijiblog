@@ -14,17 +14,15 @@ layout: main
 {% assign offset = 0 %}
 {% endif %}
 
-<main class="home no-padding" role="main">
 
-<!-- <main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
-    {% if site.show_hero and paginator == nil or paginator.page == 1 %} -->
+
+<main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
+    {% if site.show_hero and paginator == nil or paginator.page == 1 %}
     <!-- Hero -->
-    <!-- {% assign featured = posts.first %}
+    {% assign featured = posts.first %}
    
     <section class="hero" style="background-image: url({{ featured.image }})">
-            <div class="pixels"></div>
-            <div class="gradient"></div>
-            <div class="content">
+                       <div class="content">
                 <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
                     {% if site.date_format == nil %}
                         {{ featured.date | date: "%m.%d.%Y" }}
@@ -42,13 +40,8 @@ layout: main
                 </div>
             </div>
         </section>
-    {% endif %} -->
+    {% endif %}
 
-    {% assign firstpost = posts.first %}
-    <section class="hero" style="background-image: url(https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme5_wmutla.jpg)">
-        <!-- <div class="pixels"></div> -->
-      
-    </section>
 
     <!-- Posts -->
     <section id="grid" class="row flex-grid">
