@@ -6,7 +6,7 @@ category: apps4pro
 author: ajita
 short-description: No plans processed error
 tags: [Planner Manager Desktop app]
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb1CBHA5vI5nG3r_IGeSVypuvt4EtWnc25U-GC228NCStLK-0l
+image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme5_wmutla.jpg
 ---
 Product log : 
 

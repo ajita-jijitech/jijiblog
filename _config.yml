@@ -20,7 +20,7 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-paginate: 10
+paginate: 12
 
 # Social Media Settings
 # Remove the item if you don't need it
