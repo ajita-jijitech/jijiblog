@@ -6,7 +6,7 @@ category: apps4pro
 author: ajita
 short-description: No plans processed error
 tags: [Planner Manager Desktop app]
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme5_wmutla.jpg
+image: https://jijitechnologies.com/blogs/content/image/export-import-all-tasks-plans-using-excel/banner-export-import-main.png
 ---
 Product log : 
 

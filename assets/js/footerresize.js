@@ -14,7 +14,7 @@ function WidthChange(mq) {
 
         var scrollHeight = iframe.scrollHeight;
         var clientHeight = iframe.clientHeight;
-        iframe.height = scrollHeight + clientHeight + "px";
+        iframe.height = scrollHeight + clientHeight + 20+"px";
     } else {
         iframe.height = 460 + "px";
     }
