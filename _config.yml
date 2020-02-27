@@ -12,14 +12,11 @@ email: youremail@xyz.com
 disqus_username: disqus_username
 show_hero: true
 menu:
-  - title: Home
-    url: /
   - title: About
-    url: /about
+    url: https://www.jijitechnologies.com/about-us.aspx
   - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
+    url: https://www.jijitechnologies.com/contact-us.aspx
+
 paginate: 12
 
 # Social Media Settings
@@ -51,7 +48,7 @@ sent_message_url: "/contact/message-sent/"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+permalink: /:title
 collections:
   authors:
     output: true
