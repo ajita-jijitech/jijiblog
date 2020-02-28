@@ -1,3 +1,12 @@
+.minimalpost {
+    top: rem(30px);
+
+  @include media(">=sm") {
+    top: rem(50px);
+  }
+}
+
+
 .post {
   position: relative;
   top: rem(30px);
@@ -491,7 +500,7 @@
 
 .recommendation {
   @include mainFont(400);
-  position: fixed;
+  //position: fixed;
   left: 0;
   right: 0;
   bottom: -100%;
@@ -712,3 +721,34 @@
     }
   }
 }
+
+
+.pager li>a{
+  display: inline-block;
+  border: 1px solid #ddd;
+  }
+  .pager li a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background-color: #FFF;
+  border-radius: 0;
+  color: #404040;
+  }
+  .pager li a:hover{
+    background-color: red;
+    color:white;
+  }
+
+  .pager{
+    list-style: none;
+  }
+  .previous{
+    display:inline;
+  }
+
+  .next{
+    float:right
+  }

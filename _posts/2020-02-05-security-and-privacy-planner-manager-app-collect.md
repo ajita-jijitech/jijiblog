@@ -1,19 +1,21 @@
 ---
 layout: post
 title: "What information does Planner Manager app collect?"
-date: 2019-11-05 09:44:38 -0400
-category: security
+date: 2020-02-05 07:44:38 -0400
 author: ajita
 description: Information Needed
-tags: [Security and Privacy]
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfW4wjPs0BQaDqDVhliSorX46_CzSTd4F6dcgC6hOstCOecV5L
-
+tags: [Security,Privacy]
+image: https://jijitechnologies.com/blogs/content/image/hourly-gantt-chart-task-assignment-for-microsoft-planner-tasks/banner-hourly-chart-gantt-main.png
+paginate: true
 ---
+
 This app will collect following basic and planner data: 
 
 Logged-in user' e-mail Id. 
 
 All Office 365 Groups in which the logged-in user is member of. 
+
+--page-break--
 
 All Plans associated with the groups. 
 

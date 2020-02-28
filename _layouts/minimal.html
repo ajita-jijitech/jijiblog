@@ -8,11 +8,14 @@ layout: compress
     <body class="has-push-menu">
         {% include svg-icons.html %}
         {% include header.html %}
-        <section class="post">
+        <section class="minimalpost">
             <article id="post" class="post-content fullwidth" role="main">
                 {{ content }}
             </article>
         </section>
-        {% include footer.html %}
+        <iframe src="https://www.jijitechnologies.com/footer.aspx" scrolling="no" width=100% height=460px id="footeriframe"
+        style="border: none;"> </iframe>
+    <script src="{{ '/assets/js/footerresize.js' | prepend: site.baseurl }}"></script>
+    {% include footer-scripts.html %}
     </body>
 </html>

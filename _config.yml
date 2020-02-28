@@ -4,12 +4,11 @@ title: JiJi Technologies | Blogs
 description: Blogs in JiJi Technologies
 tags:
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-email: youremail@xyz.com
-disqus_username: disqus_username
+  - jiji
+  - technologies
+  - microsoft partnet network
+email: contact@jijitechnologies.com
+disqus_username: jijitechnologiesblog
 show_hero: true
 menu:
   - title: About
@@ -18,6 +17,7 @@ menu:
     url: https://www.jijitechnologies.com/contact-us.aspx
 
 paginate: 12
+logo: /assets/img/logo.png
 
 # Social Media Settings
 # Remove the item if you don't need it
@@ -31,7 +31,7 @@ twitter_username: jijitech
 
 # Posts Settings
 show_time_bar: true
-show_modal_on_exit: false
+show_modal_on_exit: true
 show_modal_on_finish_post: true
 two_columns_layout: true
 
@@ -42,7 +42,6 @@ url: "https://ajita-jijitech.github.io" # the base hostname & protocol for your 
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category
-sent_message_url: "/contact/message-sent/"
 
 
 # Build settings

@@ -46,18 +46,14 @@
   }
 
   .search-list {
-    position: absolute;
     width: 100%;
     @include mainFont(300);
     display: none;
     padding: 0 rem(20px);
     margin: rem(20px) 0;
     list-style-type: none;
-
-    @include media("<sm") {
-      height: 380px;
-      overflow: scroll;
-    }
+    max-height: 83vh;
+    overflow: auto;
 
     .active & {
       display: block;

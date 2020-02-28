@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Copy plan or tasks from same Office365 Groups"
-date: 2020-02-05 08:44:38 -0400
+date: 2019-11-07 08:44:38 -0400
 category: apps4pro
 author: ajita
 description: No plans processed error
 tags: [Planner Manager Desktop app]
-image: https://jijitechnologies.com/blogs/content/image/export-import-all-tasks-plans-using-excel/banner-export-import-main.png
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb1CBHA5vI5nG3r_IGeSVypuvt4EtWnc25U-GC228NCStLK-0l
 ---
 Product log : 
 

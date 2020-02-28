@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "What information does Planner Manager app collect?"
-date: 2019-11-05 08:44:38 -0400
+date: 2019-11-05 10:44:38 -0400
 category: security
 author: ajita
-short-description: Information Needed
+description: Information Needed
 tags: [Security and Privacy]
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfW4wjPs0BQaDqDVhliSorX46_CzSTd4F6dcgC6hOstCOecV5L
 

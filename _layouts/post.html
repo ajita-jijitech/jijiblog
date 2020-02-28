@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}" class="no-js">
-{% include head.html %}
+    {% include head.html %}
 
 <body class="has-push-menu">
     {% include minutes-to-read.html %}
     {% include svg-icons.html %}
     {% include header.html %}
-
     <section class="post {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
         <article role="article" class="post-content">
             <p class="post-info">
@@ -29,39 +28,31 @@
             {% if page.image and paginator.activated == nil %}
             <img src="{{ page.image }}" alt="Featured image" class="post-cover">
             {% endif %}
-
             {% include pagination-post.html progressBar=true %}
-
-            {% include toc.html %}
-
             {{ content }}
-
-            {% include pagination-post.html %}
-
             <div class="tags">
-                {% for tag in page.tags %}
-                {% if tag != "" %}
-                <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">#{{ tag }}</a>
+                    {% for tag in page.tags %}
+                    {% if tag != "" %}
+                    <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">#{{ tag }}</a>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            <div class="pagination pagination-post {{ include.extra_classes }}" style="display: flex;justify-content: space-between;align-items: center;">
+            {% assign prev_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" | where_exp:"post","post.date >= page.date" %}
+                {% if prev_posts.last and prev_posts.size > 0 %}
+                    <div style="flex:0 0 25%;text-align:center;"><a href="{{ prev_posts.last.url | prepend: site.baseurl}}">
+                        <span class="text"><svg class="arrow"><use xlink:href="#icon-arrow-left"></use></svg>{{ site.translations.pagination.next_post | default: "Previous Post" }} </span>
+                    </a></div>
                 {% endif %}
-                {% endfor %}
+                <div style="flex: 0 0 50%"></div>
+                {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" | where_exp:"post","post.date <= page.date" %}
+                {% if next_posts.first and next_posts.size > 1 %}
+                    <div style="flex: 0 0 25%;text-align: center;"><a href="{{ next_posts.first.url | prepend: site.baseurl}}">
+                        <span class="text">{{ site.translations.pagination.next_post | default: "Next Post" }} <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
+                    </a></div>
+                {% endif %}
             </div>
-
-            {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" | where_exp:"post","post.date <= page.date" %}
-            {% if next_posts.first %}
-            
-            <a href="{{site.url}}{{site.basurl}}{{ next_posts.first.url }}">
-                {% if include.progressBar %}
-                {% include progress-bar.html finished=true %}
-                {% endif %}
-                <span class="text">{{ site.translations.pagination.next_post | default: "Next Post" }} <svg
-                        class="arrow">
-                        <use xlink:href="#icon-arrow-right"></use>
-                    </svg></span>
-            </a>
-            {% endif %}
-
         </article>
-
         {% if site.two_columns_layout %}
         <aside class="see-also">
             <h2>{{ site.translations.text.see_also | default: "See also" }}</h2>
@@ -85,13 +76,12 @@
             </ul>
         </aside>
         {% endif %}
-
     </section>
 
     <!-- Add time bar only for pages without pagination -->
     {% if paginator.activated == nil and site.show_time_bar == true %}
     {% include time-bar.html %}
-    {% include recommendation.html %}
+   
     {% endif %}
 
     <!-- Show modal if the post is the last one -->
@@ -104,14 +94,14 @@
     {% include modal.html title="Don't go yet!" subtitle="You may also like..." closed=true showOnExit=true %}
     {% endif %}
 
-    {% include subscription.html %}
     {% include share.html %}
     {% include author.html %}
     {% include comments.html %}
-    {% include footer.html %}
-
+    {% include recommendation.html %}
+    <iframe src="https://www.jijitechnologies.com/footer.aspx" scrolling="no" width=100% height=460px id="footeriframe"
+        style="border: none;"> </iframe>
+    <script src="{{ '/assets/js/blog.js' | prepend: site.baseurl }}"></script>
     {% assign author = site.authors | where: "name", post.author | first %}
-
     {% assign author_urls = '' %}
     {% if author.github_username %}
     {% assign author_urls = author_urls | append: '"https://github.com/' | append: author.github_username | append: '",' %}
@@ -178,6 +168,6 @@
             "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
         }
         </script>
+        <script src="{{ '/assets/js/scripts.min.js' | prepend: site.baseurl }}"></script>
 </body>
-
 </html>
