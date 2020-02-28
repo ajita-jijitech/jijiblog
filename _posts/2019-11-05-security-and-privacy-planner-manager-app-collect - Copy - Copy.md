@@ -6,7 +6,6 @@ category: security
 author: ajita
 short-description: Information Needed
 tags: [Security and Privacy]
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfW4wjPs0BQaDqDVhliSorX46_CzSTd4F6dcgC6hOstCOecV5L
 
 ---
 This app will collect following basic and planner data: 
